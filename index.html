@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css/stylesheet.css"/>
   </head>
   <body>
     <!--Шапка сайту-->
     <header>
-      <!--логотип-->
-      <a href="#" class="fonts-five">WebStudio</a>
       <!--навігація шапки  по сайту-->
       <nav>
         <ul>
           <li>
-            <a href="./index.html" class="fonts-three-two">Студія</a>
+            <!--логотип-->
+            <a href="#" class="nav-text">WebStudio</a>
+          </li>
+          <li>
+            <a href="./index.html" class="nav-text">Студія</a>
           </li>
           <li>
             <a href="./portfolio.html" class="fonts-three-two">Портфоліо</a>
@@ -28,16 +33,20 @@
             <a href="#" class="fonts-three-two">Контакти</a>
           </li>
         </ul>
-        </nav>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="fonts-three-two">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="fonts-three-two">+38 096 111 11 11 </a>
-          </li>
-        </ul>
-        <!-- Закоментовані дві картинки по вказуванні на кнопку
+      </nav>
+      <ul>
+        <li>
+          <a href="mailto:info@devstudio.com" class="fonts-three-two"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="fonts-three-two"
+            >+38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <!-- Закоментовані дві картинки по вказуванні на кнопку
         <img src="./images/Vector.png" alt="вказівник" />
         <img src="./images/Vector.png" alt="вказівник" /> -->
     </header>
@@ -45,7 +54,7 @@
     <main>
       <!--Секція_1 замовити послугу-->
       <section>
-        <h1 class="fonts-one">Ефективні рішення для вашого бізнесу</h1>
+        <h1 class="nav-text">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="fonts-two-three">Замовити послугу</button>
       </section>
       <!--Секція_2 наші переваги-->
@@ -54,84 +63,128 @@
         <h2 class="fonts-two-two">наші переваги</h2>
         <ul>
           <li>
-            <h3 class="fonts-two-four">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="fonts-four-two">Ідейні міркування, і навіть початок повсякденної роботи з формування
-          позиції.</p>
+            <h3 class="fonts-two-four">Увага до деталей</h3>
+            <p class="fonts-four-two">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
           </li>
           <li>
-            <h3 class="fonts-two-four">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="fonts-four-two">Завдання організації, особливо рамки і місце навчання кадрів тягне у
-              себе.</p>
+            <h3 class="fonts-two-four">Пунктуальність</h3>
+            <p class="fonts-four-two">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
           </li>
           <li>
-            <h3 class="fonts-two-four">ПЛАНУВАННЯ</h3>
-            <p class="fonts-four-two">Так само консультація з широким активом значною мірою зумовлює.</p>
+            <h3 class="fonts-two-four">Планування</h3>
+            <p class="fonts-four-two">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
           </li>
           <li>
-            <h3 class="fonts-two-four">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="fonts-four-two">Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.</p>
+            <h3 class="fonts-two-four">Сучасні технології</h3>
+            <p class="fonts-four-two">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
           </li>
         </ul>
       </section>
       <!-- Секція 3 чим займаємось -->
-        <section>
-          <h2 class="fonts-two-two">Чим ми займаємося</h2>
-          <ul>
-            <li>
-              <img src="./images/img (9) (1).jpg" alt="photo laptop" width="370"  height="294"/>
-            </li>
-            <li>
-              <img src="./images/img (10) (1).jpg" alt="photo smartphone" width="370"  height="294"/>
-            </li>
-            <li>
-              <img src="./images/img (11) (1).jpg" alt="photo tablet" width="370"  height="294"/>
-            </li>
-          </ul>
-        </section>
+      <section>
+        <h2 class="fonts-two-two">Чим ми займаємося</h2>
+        <ul>
+          <li>
+            <img
+              src="./images/img (9) (1).jpg"
+              alt="photo laptop"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/img (10) (1).jpg"
+              alt="photo smartphone"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/img (11) (1).jpg"
+              alt="photo tablet"
+              width="370"
+              height="294"
+            />
+          </li>
+        </ul>
+      </section>
       <!--Серція_4 наша команда-->
       <section>
-          <h2 class="fonts-two-two">Наша команда</h2>
-          <ul>
-            <li>
-              <img src="./images/img (1) (1).png" alt="photo Ігор Дем'яненко" width="270"  height="260"/>
-              <h4 class="fonts-three-one">Ігор Дем'яненко</h4>
-              <p class="fonts-four-three">Product Designer</p>
-            </li>
-            <li>
-              <img src="./images/img (2) (1).png" alt="photo Ольга Рєпіна" width="270"  height="260"/>
-              <h4 class="fonts-three-one">Ольга Рєпіна</h4>
-              <p class="fonts-four-three">Frontend Developer</p>
-            </li>
-            <li>
-              <img src="./images/img (3) (1).png" alt="photo Микола Тарасов" width="270"  height="260"/>
-              <h4 class="fonts-three-one">Микола Тарасов</h4>
-              <p class="fonts-four-three">Marketing</p>
-            </li>
-            <li>
-              <img src="./images/img (4) (1).png" alt="photo Михайло Єрмаков" width="270"  height="260">
-              <h4 class="fonts-three-one">Михайло Єрмаков</h4>
-              <p class="fonts-four-three">UI Designer</p>
-            </li>
-          </ul>
+        <h2 class="fonts-two-two">Наша команда</h2>
+        <ul>
+          <li>
+            <img
+              src="./images/img (1) (1).png"
+              alt="photo Ігор Дем'яненко"
+              width="270"
+              height="260"
+            />
+            <h4 class="fonts-three-one">Ігор Дем'яненко</h4>
+            <p class="fonts-four-three">Product Designer</p>
+          </li>
+          <li>
+            <img
+              src="./images/img (2) (1).png"
+              alt="photo Ольга Рєпіна"
+              width="270"
+              height="260"
+            />
+            <h4 class="fonts-three-one">Ольга Рєпіна</h4>
+            <p class="fonts-four-three">Frontend Developer</p>
+          </li>
+          <li>
+            <img
+              src="./images/img (3) (1).png"
+              alt="photo Микола Тарасов"
+              width="270"
+              height="260"
+            />
+            <h4 class="fonts-three-one">Микола Тарасов</h4>
+            <p class="fonts-four-three">Marketing</p>
+          </li>
+          <li>
+            <img
+              src="./images/img (4) (1).png"
+              alt="photo Михайло Єрмаков"
+              width="270"
+              height="260"
+            />
+            <h4 class="fonts-three-one">Михайло Єрмаков</h4>
+            <p class="fonts-four-three">UI Designer</p>
+          </li>
+        </ul>
       </section>
     </main>
     <!--Контактні данні-->
     <footer>
-       <!--логотип-->
-       <a href="#" class="fonts-five">WebStudio</a>
-       <address>
-       <ul>
-        <li>
-          <a href="https://goo.gl/maps/J7qmqviamVAMnXDh6" target="_blank" class="fonts-three-two">м. Київ, пр-т Лесі Українки, 26</a>
-        </li>
-        <li>
-          <a href="imaito:info@devstudio.com" class="fonts-three-two">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="fonts-three-two">tel:+38 096 111 11 11</a>
-        </li>
-       </ul>
+      <!--логотип-->
+      <a href="#" class="fonts-five">WebStudio</a>
+      <address>
+        <ul>
+          <li>
+            <a href="https://goo.gl/maps/J7qmqviamVAMnXDh6" target="_blank" rel="noopener noreferrer nofollow">
+              м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li>
+            <a href="imaito:info@devstudio.com" class="fonts-three-two">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="fonts-three-two">tel:+38 096 111 11 11</a>
+          </li>
+        </ul>
       </address>
     </footer>
   </body>
