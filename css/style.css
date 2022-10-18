@@ -1,3 +1,98 @@
-.nav-text{
-    font-weight: 900;
+/* base-bgc основний bgc #F5F5F5; */
+/* second-bgc heder #FFFFFF */
+/* brend-bgc темносинфій кольор #2F303A; */
+/* ourteam-bgc наша команда #F5F4FA; */
+
+/* base-tc колір основного тексту #757575 */
+/* head-tc колір тексту заголовків #212121 */
+/* brend-tc-bgc синій кольор сайту #2196F3 */
+/* white-tc колір білого тексту #FFFFFF */
+/* contacts-tc колір телефону та ел.адреси rgba(255, 255, 255, 0.6) */
+
+:root{
+    --base-bgc:#F5F5F5;
+    --second-bgc:#FFFFFF;
+    --brend-bgc: #2F303A;
+    --ourteam-bgc:#F5F4FA;
+
+    --base-tc: #757575;
+    --head-tc:#212121;
+    --brend-tc-bgc: #2196F3;
+    --white-tc:#FFFFFF;
+    --contacts-tc:rgba(255, 255, 255, 0.6);
+}
+
+.page{
+font-family: 'Roboto';
+font-style: normal;
+letter-spacing: 0.03em;
+color: var(--base-tc)
+background-color: var(--second-bgc);
+}
+
+.page-nav{
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: var(--head-tc);
+text-decoration: none;
+}
+
+.logo{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: var(--brend-tc-bgc);
+text-decoration: none;
+}
+    
+.logo-span{
+color: var(--head-tc);
+}
+
+ul{
+list-style: none;
+}
+
+.email{
+color: var(--brend-tc-bgc);
+}
+
+.tel{
+color: var(--base-tc); 
+}
+
+.service{
+background-color: var(--brend-bgc);
+color: var(--second-bgc);
+}
+
+.button{
+color: #FFFFFF;
+background-color: var(--brend-tc-bgc);
+}
+
+.page-address {
+font-style: normal;
+font-size: 14px;
+line-height: 24px;
+background-color: var(--brend-bgc);
+color: var(--white-tc);
+text-decoration: none;
+}
+
+.logo-name{
+color: var(--white-tc);
+}
+
+.link{
+color: var(--contacts-tc);
+}
+
+.map{
+color: var(--white-tc);  
 }
