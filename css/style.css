@@ -58,15 +58,20 @@ text-decoration: none;
 color: var(--head-tc);
 }
 /* прибирання підкреслень тексту */
-.nav-link{
+.page-nav.link{
 text-decoration: none;
+color: var(--brend-tc-bgc);
+}
+/*колір кнопки на поточній сторінці */
+.page-nav.link.current{
+color: green;
 }
 
-.nav-email{
+.page-nav.email{
 color: var(--brend-tc-bgc);
 }
 
-.nav-tel{
+.page-nav.tel{
 text-decoration: none;
 color: var(--base-tc); 
 }
@@ -92,13 +97,25 @@ line-height: 60px;
 color: var(--white-tc);
 }
 
-.service-button{
+.button{
 font-family: 'Roboto';   
+font-weight: 500;
 font-size: 16px;
-line-height: 30px ;  
-color: #FFFFFF;
+line-height: 26px; 
+border-color: var(--brend-tc-bgc);
+border-radius: 4px;
+}
+
+.button.primary{
+color: var(--white-tc);
 background-color: var(--brend-tc-bgc);
 }
+
+.button.secondary{
+color:var(--head-tc);
+background-color: var(--ourteam-bgc);
+}
+
 
 h2{
 font-size: 36px;
@@ -154,4 +171,12 @@ font-size: 16px;
 line-height: 26px;
 color:var(--head-tc);
 background-color: var(--ourteam-bgc);
+}
+
+.nav-link :hover{
+color: tomato;
+}
+
+.service-button :focus, .service-button :hover {
+  color: green;  
 }
