@@ -21,7 +21,7 @@
     --white-tc:#FFFFFF;
     --contacts-tc:rgba(255, 255, 255, 0.6);
 }
-
+/* прибрав позначки ненумерованих списків */
 ul{
 list-style: none;
 }
@@ -29,6 +29,8 @@ list-style: none;
 .page{
 font-family: 'Roboto';
 font-style: normal;
+/* font-size: 14px;
+line-height: 24px; */
 letter-spacing: 0.03em;
 color: var(--base-tc);
 }
@@ -38,11 +40,10 @@ font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
-color: var(--head-tc);
-text-decoration: none;
+font-style: normal;
 }
-
-.logo{
+/* окремий шрифт та розміри для лого */
+.nav-logo{
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
@@ -56,12 +57,17 @@ text-decoration: none;
 .logo-span{
 color: var(--head-tc);
 }
+/* прибирання підкреслень тексту */
+.nav-link{
+text-decoration: none;
+}
 
-.email{
+.nav-email{
 color: var(--brend-tc-bgc);
 }
 
-.tel{
+.nav-tel{
+text-decoration: none;
 color: var(--base-tc); 
 }
 
@@ -70,13 +76,54 @@ background-color: var(--brend-bgc);
 color: var(--second-bgc);
 }
 
-.button{
+.ouradvant{
+background-color:var(--base-bgc);
+}
+.ouroccupat{
+background-color:var(--base-bgc);
+}
+.ourteam{
+background-color:var(--ourteam-bgc);
+}
+
+h1{
+font-size: 44px;
+line-height: 60px;
+color: var(--white-tc);
+}
+
+.service-button{
+font-family: 'Roboto';   
+font-size: 16px;
+line-height: 30px ;  
 color: #FFFFFF;
 background-color: var(--brend-tc-bgc);
 }
 
-.page-address {
-font-style: normal;
+h2{
+font-size: 36px;
+line-height: 42px;
+color: var(--head-tc);
+}
+
+h3{
+font-size: 14px;
+line-height: 16px;
+color: var(--head-tc);
+}
+
+h4{
+font-size: 16px;
+line-height: 19px;
+color: var(--head-tc);   
+}
+
+p{
+font-size: 14px;
+line-height: 24px;
+}
+
+.page-contact {
 font-size: 14px;
 line-height: 24px;
 background-color: var(--brend-bgc);
@@ -84,20 +131,27 @@ color: var(--white-tc);
 text-decoration: none;
 }
 
-.logo-name{
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: 0.03em;
+.contact-logo{
 color: var(--white-tc);
 }
 
+.map{
+font-style: normal;
+color: var(--white-tc);  
+}
+
 .link{
+font-style: normal;
 color: var(--contacts-tc);
 }
 
-.map{
-color: var(--white-tc);  
+.portfolio{
+background-color: var(--base-bgc);
+}
+.portfolio-button{
+font-family: 'Roboto';   
+font-size: 16px;
+line-height: 26px;
+color:var(--head-tc);
+background-color: var(--ourteam-bgc);
 }
