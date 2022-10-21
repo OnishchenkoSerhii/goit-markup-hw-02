@@ -26,11 +26,12 @@ ul{
 list-style: none;
 }
 
-.page{
+body{
 font-family: 'Roboto';
+font-weight: 400;
 font-style: normal;
-/* font-size: 14px;
-line-height: 24px; */
+font-size: 14px;
+line-height: 1.7143;
 letter-spacing: 0.03em;
 color: var(--base-tc);
 }
@@ -38,9 +39,8 @@ color: var(--base-tc);
 .page-nav{
 font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.1429;
 letter-spacing: 0.02em;
-font-style: normal;
 }
 /* окремий шрифт та розміри для лого */
 .nav-logo{
@@ -48,135 +48,159 @@ font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.1923;
 letter-spacing: 0.03em;
 color: var(--brend-tc-bgc);
 text-decoration: none;
 }
-    
+/*чорний колір частини назви в лого*/
 .logo-span{
 color: var(--head-tc);
 }
-/* прибирання підкреслень тексту */
+/*до навігації прибирання підкреслень тексту 
+та базовий чорний колір*/
 .page-nav.link{
+color: var(--head-tc);
 text-decoration: none;
+}
+/*ховер в навігації*/
+.page-nav:hover {
 color: var(--brend-tc-bgc);
 }
-/*колір кнопки на поточній сторінці */
+/*акцентний колір кнопки на її активній 
+поточній сторінці */
 .page-nav.link.current{
-color: green;
+color:var(--brend-tc-bgc);
 }
-
-.page-nav.email{
-color: var(--brend-tc-bgc);
-}
-
-.page-nav.tel{
+/*електронка та телефон в навігації */
+.nav-contact{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1429;
+letter-spacing: 0.02em;
+font-style: normal;
+color: var(--base-tc);
 text-decoration: none;
-color: var(--base-tc); 
 }
-
+/* ховер на електронці та телефоні */
+.nav-contact:hover{
+  color: var(--brend-tc-bgc);
+}
+/*секція 1 class=service*/
 .service{
-background-color: var(--brend-bgc);
 color: var(--second-bgc);
 }
-
-.ouradvant{
-background-color:var(--base-bgc);
-}
-.ouroccupat{
-background-color:var(--base-bgc);
-}
-.ourteam{
-background-color:var(--ourteam-bgc);
-}
-
 h1{
+font-weight: 900;
 font-size: 44px;
-line-height: 60px;
+line-height: 1.3636;
 color: var(--white-tc);
 }
-
+/*кнопка*/
 .button{
-font-family: 'Roboto';   
-font-weight: 500;
+  font-family: 'Roboto';   
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625; 
+  cursor: pointer;
+  }
+  /*кнопка в секції 1 class="service"*/
+  .button.primary{
+  color: var(--white-tc);
+  background-color: var(--brend-tc-bgc);
+  border-color: var(--brend-tc-bgc);
+  border-radius: 4px;
+  }
+/*секція 2 class="our-advant"*/
+.our-advant{
+}
+
+h2{
+font-weight: 700; 
+font-size: 36px;
+line-height: 1.1667;
+color: var(--head-tc);
+}
+  
+h3{
+font-weight: 700; 
+font-size: 14px;
+line-height: 1.1429;
+color: var(--head-tc);
+}
+/*секція 3 class="our-occupat"*/
+.our-occupat{
+}
+/*секція 4 class="our-team"*/
+.our-team{
+background-color:var(--ourteam-bgc);
+}
+/*шрифт прізвищ в секції наша команда 
+class="our-team"*/
+h4{
+font-weight: 500; 
 font-size: 16px;
-line-height: 26px; 
+line-height: 1.1875;
+color: var(--head-tc);   
+}
+/*шрифт назви професії в секції наша команда, 
+основні інші характеристики підтягуються з body*/
+.profession{
+line-height: 1.1429;
+}
+/*секція контактних даний у footer */
+.page-contacts{
+font-weight: 400; 
+font-size: 14px;
+line-height: 1.7143;
+background-color: var(--brend-bgc);
+color: var(--white-tc);
+text-decoration: none;
+font-style: normal;
+}
+/*зміна кольору тексту в лого з синього в класі
+class="nav-logo" на білий через span*/
+.contacts-logo{
+color: var(--white-tc);
+}
+/*для стилізації елюадреси та телефону у footer*/
+.contacts{
+line-height: 1.1429;
+letter-spacing: 0.03em;
+font-style: normal;
+color: var(--contacts-tc);
+text-decoration: none;
+}
+.contacts:hover{
+color: var(--base-tc)
+}
+
+
+/*секція портфоліо*/
+.portfolio{
+}
+/*перша кнопка в секції Портфоліо*/
+.portfolio-button{
+font-family: 'Roboto';
+font-weight: 500; 
+font-size: 16px;
+line-height: 1.625;
+color:var(--head-tc);
+background-color: var(--ourteam-bgc);
+border-color: var(--ourteam-bgc);
+border-radius: 4px;
+}
+
+.portfolio-button:hover{
+color:var(--white-tc);
+background-color: var(--brend-tc-bgc);
 border-color: var(--brend-tc-bgc);
 border-radius: 4px;
 }
 
-.button.primary{
-color: var(--white-tc);
-background-color: var(--brend-tc-bgc);
-}
-
-.button.secondary{
-color:var(--head-tc);
-background-color: var(--ourteam-bgc);
-}
 
 
-h2{
-font-size: 36px;
-line-height: 42px;
-color: var(--head-tc);
-}
 
-h3{
-font-size: 14px;
-line-height: 16px;
-color: var(--head-tc);
-}
-
-h4{
-font-size: 16px;
-line-height: 19px;
-color: var(--head-tc);   
-}
-
-p{
-font-size: 14px;
-line-height: 24px;
-}
-
-.page-contact {
-font-size: 14px;
-line-height: 24px;
-background-color: var(--brend-bgc);
-color: var(--white-tc);
-text-decoration: none;
-}
-
-.contact-logo{
-color: var(--white-tc);
-}
-
-.map{
-font-style: normal;
-color: var(--white-tc);  
-}
-
-.link{
-font-style: normal;
-color: var(--contacts-tc);
-}
-
-.portfolio{
-background-color: var(--base-bgc);
-}
-.portfolio-button{
-font-family: 'Roboto';   
-font-size: 16px;
-line-height: 26px;
-color:var(--head-tc);
-background-color: var(--ourteam-bgc);
-}
-
-.nav-link :hover{
-color: tomato;
-}
-
-.service-button :focus, .service-button :hover {
+.service-button:focus, .service-button:hover {
   color: green;  
 }
